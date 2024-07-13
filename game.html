@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Game</title>
+</head>
+<body>
+    <header>
+        <div id="help">
+            <p>Want to learn the rules? Click Here!</p>
+            <p id="rules">Rules: The goal of the game is to destroy the other players ship through whatever means necessary. <br>There are three attack types: Kinetic, Energy, and Mixed and three health types: Shield, Armor and Hull.Kinetic deals half damage to shields but double damage to armor. Energy is the opposite dealing half damage to armor but double to shields. Mixed has no bonus against either but no weaknesses either. Hull takes normal damage from all sources, and once you run out of hull <em>you lose.</em><br> There are also support cards which give a variety of buffs but typically deal no damage, use these to increase your odds of winning, but be careful for drawbacks. </p>
+        </div>
+    </header>
+    <div class="card-template" style="display: none;">
+        <div class="card">
+            <div class="attack-type"></div>
+            <div class="card-name"></div>
+            <div class="card-image"></div>
+            <div class="card-attack"></div>
+            <div class="card-drain"></div>
+            <div class="card-description"></div>
+        </div>
+    </div>
+
+
+    <main id="play-area">
+        <div id="player-area">
+            <h2>Player</h2>
+            <div id="player-cards">
+                <div class="energy"> 
+                    <div class="energy-count">0</div>
+                </div>
+            </div>
+        </div>
+        <div id="game-area">
+            <div id="player-health">
+                <h2>Player Health</h2>
+                <div id="player-health-count">Your Health: Hull: 200 Shields: 100 Armor: 100</div>
+            </div>
+
+        </div>
+        <div id="computer-area">
+            <h2>Computer</h2>
+            <div id="computer-cards"></div>
+        </div>
+
+
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
