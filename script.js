@@ -125,5 +125,12 @@ const cards = [
     type: 'support', 
     description: 'Use 200% of your energy to launch a devastating attack. Double your attack and evasion for 3 turns. After this, your ship is disabled for 2 turns.', 
     cost: 15 
-  }
+    },
+    {
+    name: 'Reaper Missile',
+    damage: 20,
+    type: 'mixed',
+    description: 'Launch an illegally modified missile that deals 20 damage and disables your opponent\'s ship for 1 turn.',
+    cost: 20
+    }
 ];
