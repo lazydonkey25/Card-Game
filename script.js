@@ -4,7 +4,7 @@ const cards = [
     name: 'Railgun', 
     damage: 30, 
     type: 'kinetic', 
-    description: 'A high powered single shot kinetic weapon. Deals 30 damage base.', 
+    description: 'A high powered single shot kinetic weapon. Deals 30 damage.', 
     cost: 5 
   },
   { 
@@ -134,3 +134,10 @@ const cards = [
     cost: 20
     }
 ];
+//test code
+var i = 0;
+while (i < 20) {
+  var card = document.getElementById('card');
+  var clone = card.cloneNode(true);
+  document.getElementById('player-cards').appendChild(clone);  i++;
+}

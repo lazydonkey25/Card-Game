@@ -1,3 +1,6 @@
+:root {
+    overflow-x: hidden;
+}
 #rules {
     display: none;
 }
@@ -26,4 +29,63 @@
 #game-area {
     height: 500px; /*placeholder till i get content*/
     order: 2;
+}
+#card {
+    width: 200px;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.card-name {
+    font-size: 1.5em;
+    text-align: center;
+}
+.card-image img {
+    max-width: 200px;
+    max-height: 200px;
+}
+.attack-type p {
+    text-align: left;
+    background-color: rgb(206, 255, 255); /*placeholder till i get content*/
+    color: black;
+}
+.attack-type {
+    width: 100%;
+}
+.card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+.card-drain  {
+    background-color: #7DF9FF; /*placeholder till i get content*/
+    border-radius: 50%;
+    padding: 10px;
+    width: min-content;
+    height: min-content;
+}
+.card-description {
+    box-sizing: border-box;
+    background-color: #727571;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 0;
+    height: auto;
+    font-size: .9em;
+    border-radius: 0px 0px 10px 10px;
+    color: white;
+}
+
+#player-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: nowrap;
 }
